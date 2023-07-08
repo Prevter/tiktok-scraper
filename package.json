@@ -1,0 +1,47 @@
+{
+  "name": "@prevter/tiktok-download",
+  "version": "1.0.0",
+  "description": "Library for downloading videos from TikTok (without watermark)",
+  "main": "lib/index.js",
+  "types": "lib/index.d.ts",
+  "scripts": {
+    "test": "cd ./test && npm run reload && npm run test",
+    "build": "tsc -d",
+    "prepare": "npm run build && npm run lint:fix",
+    "build:test": "npm run build && npm run test",
+    "lint": "eslint",
+    "lint:fix": "eslint --fix"
+  },
+  "devDependencies": {
+    "@types/node": "^20.4.1",
+    "@typescript-eslint/eslint-plugin": "^5.61.0",
+    "eslint": "^8.44.0",
+    "eslint-config-standard-with-typescript": "^36.0.0",
+    "eslint-plugin-import": "^2.26.0",
+    "eslint-plugin-n": "^15.7.0",
+    "eslint-plugin-promise": "^6.1.1",
+    "typescript": "^5.1.6"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/prevter/tt-download.git"
+  },
+  "keywords": [
+    "tiktok",
+    "video",
+    "downloader"
+  ],
+  "author": "prevter",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/prevter/tt-download/issues"
+  },
+  "homepage": "https://github.com/prevter/tt-download#readme",
+  "files": [
+    "lib/**/*"
+  ],
+  "directories": {
+    "lib": "lib",
+    "test": "test"
+  }
+}

@@ -1,0 +1,9 @@
+{
+  "scripts": {
+    "reload": "rm -rf node_modules/@prevter && npm install",
+    "test": "node index.js"
+  },
+  "dependencies": {
+    "@prevter/tiktok-download": "file:../"
+  }
+}
