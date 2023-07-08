@@ -1,27 +1,27 @@
 # TikTok Video Downloader
 
-![npm](https://img.shields.io/npm/v/%40prevter%2Ftiktok-download)
-![npm type definitions](https://img.shields.io/npm/types/%40prevter%2Ftiktok-download)
-![GitHub](https://img.shields.io/github/license/prevter/tt-download)  
-![npm](https://nodei.co/npm/%40prevter%2Ftiktok-download.png)
+![npm](https://img.shields.io/npm/v/%40prevter%2Ftiktok-scraper)
+![npm type definitions](https://img.shields.io/npm/types/%40prevter%2Ftiktok-scraper)
+![GitHub](https://img.shields.io/github/license/prevter/tiktok-scraper)  
+![npm](https://nodei.co/npm/%40prevter%2Ftiktok-scraper.png)
 
 Simple library to download TikTok videos without watermark in TypeScript.
 
 ## Installation
 
 ```bash
-npm install @prevter/tiktok-download
+npm install @prevter/tiktok-scraper
 ```
 
 ## Usage
 
 ```ts
 // Typescript:
-import { fetchVideo } from '@prevter/tiktok-download';
+import { fetchVideo } from '@prevter/tiktok-scraper';
 import { writeFileSync } from 'fs';
 
 // Javascript:
-// const { fetchVideo } = require('@prevter/tiktok-download');
+// const { fetchVideo } = require('@prevter/tiktok-scraper');
 // const { writeFileSync } = require('fs');
 
 const url = 'https://www.tiktok.com/@username/video/1234567891234567891';

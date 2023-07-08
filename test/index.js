@@ -1,4 +1,4 @@
-const { fetchVideo } = require('@prevter/tiktok-download');
+const { fetchVideo } = require('@prevter/tiktok-scraper');
 const fs = require('fs');
 
 (async () => {

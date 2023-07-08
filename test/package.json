@@ -4,6 +4,6 @@
     "test": "node index.js"
   },
   "dependencies": {
-    "@prevter/tiktok-download": "file:../"
+    "@prevter/tiktok-scraper": "file:../"
   }
 }

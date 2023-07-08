@@ -1,5 +1,5 @@
 {
-  "name": "@prevter/tiktok-download",
+  "name": "@prevter/tiktok-scraper",
   "version": "1.0.0",
   "description": "Library for downloading videos from TikTok (without watermark)",
   "main": "lib/index.js",
@@ -24,7 +24,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/prevter/tt-download.git"
+    "url": "git+https://github.com/prevter/tiktok-scraper.git"
   },
   "keywords": [
     "tiktok",
@@ -34,9 +34,9 @@
   "author": "prevter",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/prevter/tt-download/issues"
+    "url": "https://github.com/prevter/tiktok-scraper/issues"
   },
-  "homepage": "https://github.com/prevter/tt-download#readme",
+  "homepage": "https://github.com/prevter/tiktok-scraper#readme",
   "files": [
     "lib/**/*"
   ],
