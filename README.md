@@ -3,7 +3,6 @@
 ![npm](https://img.shields.io/npm/v/%40prevter%2Ftiktok-scraper)
 ![npm type definitions](https://img.shields.io/npm/types/%40prevter%2Ftiktok-scraper)
 ![GitHub](https://img.shields.io/github/license/prevter/tiktok-scraper)  
-![npm](https://nodei.co/npm/%40prevter%2Ftiktok-scraper.png)
 
 Simple library to download TikTok videos without watermark in TypeScript.
 
