@@ -58,9 +58,11 @@ const getBuffer = (url: string, progress?: (progress: DownloadProgress) => void)
  * @returns Promise containing the full TikTok video URL
  */
 export const getFullURL = async (url: string): Promise<string> => {
-  const match = url.match(/(vm|vt)\.tiktok\.com\/(.*)/);
-  if (!match) throw new Error(`Unknown TikTok video URL: ${url}`);
-
+  var match = url.match(/(vm|vt)\.tiktok\.com\/(.*)/);
+  if (!match)
+  match = url.match(/(www|vm|vt)\.tiktok\.com\/t\/(.*)/);
+  if (!match)
+      throw new Error(`Unknown TikTok video URL: ${url}`);
   // follow the redirect to get the full URL
   return new Promise((resolve, reject) => {
     https
@@ -93,7 +95,7 @@ export const getVideoId = (url: string): string => {
  * @returns Promise containing the video ID
  */
 export const detectVideoId = async (url: string): Promise<string> => {
-  if (url.match(/(vm|vt)\.tiktok\.com\/(.*)/)) {
+  if (url.match(/(vm|vt)\.tiktok\.com\/(.*)/) || url.match(/(vm|vt|www)\.tiktok\.com\/t\/(.*)/)) {
     url = await getFullURL(url);
   }
   return getVideoId(url);
