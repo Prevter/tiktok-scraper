@@ -60,9 +60,9 @@ const getBuffer = (url: string, progress?: (progress: DownloadProgress) => void)
 export const getFullURL = async (url: string): Promise<string> => {
   var match = url.match(/(vm|vt)\.tiktok\.com\/(.*)/);
   if (!match)
-  match = url.match(/(www|vm|vt)\.tiktok\.com\/t\/(.*)/);
+    match = url.match(/(www|vm|vt)\.tiktok\.com\/t\/(.*)/);
   if (!match)
-      throw new Error(`Unknown TikTok video URL: ${url}`);
+    throw new Error(`Unknown TikTok video URL: ${url}`);
   // follow the redirect to get the full URL
   return new Promise((resolve, reject) => {
     https
